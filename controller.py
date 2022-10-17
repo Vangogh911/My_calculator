@@ -20,8 +20,9 @@ def input_operation(enter):
         else:
             view.error_value()
 
+
 def operation():
-    match (model.ops):
+    match model.ops:
         case '+':
             model.total = model.first + model.second
         case '-':
